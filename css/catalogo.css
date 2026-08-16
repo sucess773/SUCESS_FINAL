@@ -1,0 +1,435 @@
+/* ==================================
+   SUCESS - CATALOGO CSS 2.0
+================================== */
+
+
+/* CONTENEDOR */
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+
+/* TITULO */
+
+main h2{
+
+    text-align:center;
+    color:var(--amarillo);
+    font-size:45px;
+    font-weight:900;
+    margin:45px 0;
+
+}
+
+
+
+/* ===============================
+   FILTROS
+================================ */
+
+
+.filtros{
+
+    background:#151515;
+
+    border:1px solid #333;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:45px;
+
+}
+
+
+
+.filtros input,
+.filtros select{
+
+
+    flex:1;
+
+    background:#0b0b0b;
+
+    color:white;
+
+    border:1px solid #333;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+
+
+.filtros input:focus,
+.filtros select:focus{
+
+    border-color:var(--amarillo);
+
+}
+
+
+
+
+
+/* ===============================
+   PRODUCTOS
+================================ */
+
+
+.productos{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+
+/* TARJETA */
+
+.producto-card{
+
+
+    background:#151515;
+
+    border:1px solid #333;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    padding:18px;
+
+    position:relative;
+
+    transition:.3s;
+
+
+}
+
+
+
+.producto-card:hover{
+
+
+    transform:translateY(-8px);
+
+    border-color:var(--amarillo);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.5);
+
+
+}
+
+
+
+
+
+/* FAVORITO */
+
+
+.favorito-btn{
+
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    background:#111;
+
+    border:1px solid #444;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    z-index:2;
+
+
+}
+
+
+
+
+
+
+/* IMAGEN */
+
+
+.imagen-producto{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:260px;
+
+    background:#0d0d0d;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+
+}
+
+
+
+.imagen-producto img{
+
+
+    width:90%;
+
+    height:90%;
+
+    object-fit:contain;
+
+    transition:.4s;
+
+
+}
+
+
+
+.producto-card:hover img{
+
+
+    transform:scale(1.08);
+
+
+}
+
+
+
+
+
+/* INFORMACION */
+
+
+.producto-info{
+
+
+    text-align:center;
+
+    padding-top:20px;
+
+
+}
+
+
+
+.producto-info h3{
+
+
+    color:white;
+
+    font-size:20px;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.codigo{
+
+
+    color:#999;
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+.datos-producto p{
+
+
+    color:#ccc;
+
+    margin:8px 0;
+
+    font-size:15px;
+
+
+}
+
+
+
+
+/* PRECIO */
+
+
+.precio{
+
+
+    color:var(--amarillo);
+
+    font-size:30px;
+
+    font-weight:900;
+
+    margin:18px 0;
+
+
+}
+
+
+
+
+
+
+/* BOTON */
+
+
+.btn-carrito{
+
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--amarillo);
+
+    color:#111;
+
+    font-weight:900;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+
+}
+
+
+
+.btn-carrito:hover{
+
+
+    transform:translateY(-3px);
+
+    background:var(--amarillo-hover);
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   TABLET
+================================ */
+
+
+@media(max-width:1000px){
+
+
+.productos{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.filtros{
+
+    flex-wrap:wrap;
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   CELULAR
+================================ */
+
+
+@media(max-width:600px){
+
+
+main h2{
+
+    font-size:32px;
+
+}
+
+
+
+.productos{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.filtros{
+
+    flex-direction:column;
+
+}
+
+
+
+.imagen-producto{
+
+    height:300px;
+
+}
+
+
+}

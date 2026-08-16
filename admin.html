@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin | SUCESS</title>
+
+<link rel="icon" href="assets/logo.png">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav class="container">
+
+
+<a href="index.html" class="logo">
+SUCESS
+</a>
+
+
+<ul class="menu">
+
+<li>
+<a href="index.html">
+Inicio
+</a>
+</li>
+
+
+<li>
+<a href="catalogo.html">
+Catálogo
+</a>
+</li>
+
+
+<li>
+<a href="carrito.html">
+🛒 Carrito
+</a>
+</li>
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+
+
+
+<main class="admin-container">
+
+
+
+<h1>
+⚙️ Panel Administrador SUCESS
+</h1>
+
+
+
+
+<section class="admin-form">
+
+
+<h2>
+Agregar figurita
+</h2>
+
+
+
+<div class="form-grid">
+
+
+<input 
+id="nombre"
+placeholder="Nombre del jugador">
+
+
+
+<input 
+id="codigo"
+placeholder="Código">
+
+
+
+<input 
+id="pais"
+placeholder="País">
+
+
+
+
+
+<select id="categoria">
+
+<option value="">
+Categoría
+</option>
+
+<option>
+Portero
+</option>
+
+<option>
+Defensa
+</option>
+
+<option>
+Mediocampista
+</option>
+
+<option>
+Delantero
+</option>
+
+<option>
+Escudos
+</option>
+
+<option>
+Estadios
+</option>
+
+<option>
+Campeones
+</option>
+
+</select>
+
+
+
+
+
+<select id="rareza">
+
+<option value="">
+Rareza
+</option>
+
+<option>
+Común
+</option>
+
+<option>
+Especial
+</option>
+
+<option>
+Legendaria
+</option>
+
+<option>
+Oro
+</option>
+
+</select>
+
+
+
+
+
+<input 
+id="coleccion"
+placeholder="Colección">
+
+
+
+
+
+<input 
+id="precio"
+type="number"
+placeholder="Precio">
+
+
+
+
+
+<input 
+id="stock"
+type="number"
+placeholder="Stock">
+
+
+
+
+
+<label class="subir-imagen">
+
+📷 Seleccionar imagen
+
+
+<input 
+type="file"
+id="imagen"
+accept="image/*">
+
+
+</label>
+
+
+
+</div>
+
+
+
+
+
+<button 
+id="guardar-producto"
+class="btn-admin">
+
+➕ Guardar producto
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="productos-admin">
+
+
+<h2>
+Productos registrados
+</h2>
+
+
+
+
+<div id="lista-admin">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 SUCESS | Administración
+</p>
+
+</footer>
+
+
+
+
+
+<script src="js/admin.js"></script>
+
+
+</body>
+
+</html>

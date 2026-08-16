@@ -1,0 +1,247 @@
+/* ==================================
+   SUCESS - NOSOTROS CSS 2.0
+================================== */
+
+
+/* CONTENEDOR */
+
+.nosotros{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:60px auto;
+
+    padding-bottom:60px;
+
+}
+
+
+
+
+
+/* TITULO */
+
+.nosotros h2{
+
+    text-align:center;
+
+    color:var(--amarillo);
+
+    font-size:45px;
+
+    font-weight:900;
+
+    margin-bottom:45px;
+
+}
+
+
+
+
+
+/* TARJETA PRINCIPAL */
+
+.nosotros-card{
+
+    background:#111;
+
+    border:1px solid #292929;
+
+    border-radius:25px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+
+
+
+
+.nosotros-card h3{
+
+    color:white;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+.nosotros-card p{
+
+    color:#bbb;
+
+    font-size:17px;
+
+    line-height:1.7;
+
+    max-width:850px;
+
+    margin:15px auto;
+
+}
+
+
+
+
+
+
+
+/* VALORES */
+
+.valores{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin:45px 0;
+
+}
+
+
+
+
+
+.valores div{
+
+    background:#080808;
+
+    border:1px solid #292929;
+
+    border-radius:20px;
+
+    padding:30px 20px;
+
+    transition:.3s;
+
+}
+
+
+
+
+
+.valores div:hover{
+
+    border-color:var(--amarillo);
+
+    transform:translateY(-6px);
+
+}
+
+
+
+
+
+.valores h4{
+
+    color:var(--amarillo);
+
+    font-size:22px;
+
+    margin-bottom:12px;
+
+}
+
+
+
+
+
+.valores p{
+
+    font-size:15px;
+
+}
+
+
+
+
+
+
+
+/* BOTON */
+
+.nosotros .btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+}
+
+
+
+
+
+
+
+/* TABLET */
+
+@media(max-width:900px){
+
+
+.valores{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* CELULAR */
+
+@media(max-width:600px){
+
+
+.nosotros{
+
+    width:94%;
+
+}
+
+
+
+.nosotros h2{
+
+    font-size:32px;
+
+}
+
+
+
+.nosotros-card{
+
+    padding:25px 20px;
+
+}
+
+
+
+.nosotros-card h3{
+
+    font-size:24px;
+
+}
+
+
+
+}

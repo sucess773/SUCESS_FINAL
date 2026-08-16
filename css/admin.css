@@ -1,0 +1,1004 @@
+/* ==================================
+   SUCESS - ADMIN CSS
+   PARTE 1/4
+================================== */
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.admin-container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:50px auto;
+
+}
+
+
+
+
+
+/* TITULO */
+
+.admin-container h1{
+
+    text-align:center;
+
+    color:var(--amarillo);
+
+    font-size:42px;
+
+    font-weight:900;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   FORMULARIO ADMIN
+================================ */
+
+
+.admin-form{
+
+    background:#181818;
+
+    border:1px solid #333;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+
+
+
+.admin-form label{
+
+    color:#ccc;
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+}
+
+
+
+
+
+.admin-form input,
+
+.admin-form select,
+
+.admin-form textarea{
+
+
+    width:100%;
+
+    background:#111;
+
+    color:white;
+
+    border:1px solid #444;
+
+    border-radius:12px;
+
+    padding:14px;
+
+    outline:none;
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+.admin-form input:focus,
+
+.admin-form select:focus,
+
+.admin-form textarea:focus{
+
+
+    border-color:var(--amarillo);
+
+
+}
+
+
+
+
+
+.admin-form textarea{
+
+    height:100px;
+
+    resize:none;
+
+}
+
+
+
+
+
+
+
+/* CAMPOS GRANDES */
+
+.campo-completo{
+
+    grid-column:1/-1;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   SUBIDA IMAGEN
+================================ */
+
+
+.imagen-admin{
+
+    background:#111;
+
+    border:2px dashed #444;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#aaa;
+
+}
+
+
+
+.imagen-admin:hover{
+
+    border-color:var(--amarillo);
+
+}
+
+
+
+.imagen-admin input{
+
+    border:none;
+
+}
+
+
+
+
+
+.preview-imagen{
+
+    width:180px;
+
+    height:180px;
+
+    margin:20px auto;
+
+    background:#222;
+
+    border-radius:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+}
+
+
+
+.preview-imagen img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+}
+/* ==================================
+   SUCESS - ADMIN CSS
+   PARTE 2/4
+================================== */
+
+
+/* ===============================
+   BOTON GUARDAR
+================================ */
+
+
+.btn-guardar{
+
+    grid-column:1/-1;
+
+    padding:16px;
+
+    background:var(--amarillo);
+
+    color:#111;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    font-weight:900;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.btn-guardar:hover{
+
+    background:var(--amarillo-hover);
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   LISTA PRODUCTOS ADMIN
+================================ */
+
+
+.lista-admin{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   TARJETA ADMIN
+================================ */
+
+
+.admin-card{
+
+    background:#181818;
+
+    border:1px solid #333;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    padding:20px;
+
+    transition:.3s;
+
+}
+
+
+
+.admin-card:hover{
+
+    border-color:var(--amarillo);
+
+    transform:translateY(-6px);
+
+}
+
+
+
+
+
+
+
+/* IMAGEN CARD */
+
+.admin-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:contain;
+
+    background:#111;
+
+    border-radius:15px;
+
+}
+
+
+
+
+
+
+
+/* INFORMACION */
+
+.admin-card h3{
+
+    color:var(--amarillo);
+
+    font-size:22px;
+
+    margin:18px 0;
+
+}
+
+
+
+.admin-card p{
+
+    color:#ccc;
+
+    margin:8px 0;
+
+}
+
+
+
+
+
+.admin-card strong{
+
+    color:white;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   BOTONES ACCIONES
+================================ */
+
+
+.acciones-admin{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+
+
+
+
+.btn-editar,
+
+.btn-eliminar{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+
+
+.btn-editar{
+
+    background:var(--amarillo);
+
+    color:#111;
+
+}
+
+
+
+.btn-editar:hover{
+
+    background:var(--amarillo-hover);
+
+}
+
+
+
+
+
+.btn-eliminar{
+
+    background:#e63946;
+
+    color:white;
+
+}
+
+
+
+.btn-eliminar:hover{
+
+    background:#ff5555;
+
+}
+/* ==================================
+   SUCESS - ADMIN CSS
+   PARTE 3/4
+================================== */
+
+
+/* ===============================
+   BUSQUEDA ADMIN
+================================ */
+
+
+.admin-buscador{
+
+    background:#181818;
+
+    border:1px solid #333;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-top:40px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+
+.admin-buscador input{
+
+    flex:1;
+
+    background:#111;
+
+    color:white;
+
+    border:1px solid #444;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    outline:none;
+
+}
+
+
+
+.admin-buscador input:focus{
+
+    border-color:var(--amarillo);
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   FILTROS ADMIN
+================================ */
+
+
+.filtros-admin{
+
+    display:flex;
+
+    gap:15px;
+
+    margin:25px 0;
+
+}
+
+
+
+.filtros-admin select{
+
+    background:#181818;
+
+    color:white;
+
+    border:1px solid #444;
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   ESTADISTICAS
+================================ */
+
+
+.estadisticas-admin{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    margin:40px 0;
+
+}
+
+
+
+.stat-card{
+
+    background:#181818;
+
+    border:1px solid #333;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+
+
+.stat-card h3{
+
+    color:#aaa;
+
+    font-size:16px;
+
+}
+
+
+
+.stat-card strong{
+
+    display:block;
+
+    color:var(--amarillo);
+
+    font-size:32px;
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   MENSAJES
+================================ */
+
+
+.mensaje-admin{
+
+    padding:18px;
+
+    border-radius:12px;
+
+    margin:20px 0;
+
+    text-align:center;
+
+    font-weight:bold;
+
+}
+
+
+
+.mensaje-exito{
+
+    background:#143d24;
+
+    color:#25d366;
+
+    border:1px solid #25d366;
+
+}
+
+
+
+.mensaje-error{
+
+    background:#421b1b;
+
+    color:#ff7777;
+
+    border:1px solid #e63946;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   ESTADO PRODUCTO
+================================ */
+
+
+.estado-producto{
+
+    display:inline-block;
+
+    padding:7px 15px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+
+
+.estado-disponible{
+
+    background:#143d24;
+
+    color:#25d366;
+
+}
+
+
+
+.estado-agotado{
+
+    background:#421b1b;
+
+    color:#ff7777;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   ORDENAMIENTO
+================================ */
+
+
+.orden-admin{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.orden-admin select{
+
+    background:#111;
+
+    color:white;
+
+    border:1px solid #444;
+
+    padding:12px;
+
+    border-radius:10px;
+
+}
+/* ==================================
+   SUCESS - ADMIN CSS
+   PARTE 4/4
+================================== */
+
+
+/* ===============================
+   ANIMACIONES
+================================ */
+
+
+.admin-card{
+
+    animation:entradaAdmin .4s ease;
+
+}
+
+
+
+@keyframes entradaAdmin{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   TABLET
+================================ */
+
+
+@media(max-width:1000px){
+
+
+    .admin-form{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+
+    .lista-admin{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+
+    .estadisticas-admin{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   CELULAR
+================================ */
+
+
+@media(max-width:650px){
+
+
+
+    .admin-container{
+
+        width:94%;
+
+        margin:30px auto;
+
+    }
+
+
+
+
+
+    .admin-container h1{
+
+        font-size:32px;
+
+    }
+
+
+
+
+
+    .admin-form{
+
+        grid-template-columns:1fr;
+
+        padding:25px 20px;
+
+    }
+
+
+
+
+
+    .lista-admin{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+
+
+    .estadisticas-admin{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+
+
+    .admin-buscador{
+
+        flex-direction:column;
+
+    }
+
+
+
+
+
+    .filtros-admin{
+
+        flex-direction:column;
+
+    }
+
+
+
+
+
+    .acciones-admin{
+
+        flex-direction:column;
+
+    }
+
+
+
+
+
+    .admin-card img{
+
+        height:250px;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   CELULAR PEQUEÑO
+================================ */
+
+
+@media(max-width:380px){
+
+
+
+    .admin-container h1{
+
+        font-size:27px;
+
+    }
+
+
+
+
+
+    .admin-card{
+
+        padding:15px;
+
+    }
+
+
+
+
+
+    .btn-guardar,
+
+    .btn-editar,
+
+    .btn-eliminar{
+
+        font-size:14px;
+
+    }
+
+
+}

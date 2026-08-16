@@ -1,0 +1,927 @@
+/* ==================================
+   SUCESS - PRODUCTO CSS
+   PARTE 1/4
+================================== */
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.producto-container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:60px auto;
+
+}
+
+
+
+/* TARJETA DETALLE */
+
+.producto-detalle{
+
+    background:#181818;
+    border:1px solid #333;
+    border-radius:25px;
+    padding:40px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.5);
+
+}
+
+
+
+
+
+/* ===============================
+   IMAGEN PRODUCTO
+================================ */
+
+
+.producto-imagen{
+
+    width:100%;
+    height:600px;
+    background:#0d0d0d;
+    border-radius:25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+
+}
+
+
+.producto-imagen img{
+
+    width:90%;
+    height:90%;
+    object-fit:contain;
+    transition:.4s;
+
+}
+
+.producto-imagen:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+
+/* ===============================
+   INFORMACION
+================================ */
+
+
+.producto-info-detalle{
+
+    padding:20px;
+
+}
+
+
+
+.producto-info-detalle h1{
+
+    color:var(--amarillo);
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.producto-info-detalle p{
+
+    color:#ccc;
+
+    font-size:18px;
+
+    margin:12px 0;
+
+}
+
+
+
+.producto-info-detalle strong{
+
+    color:white;
+
+}
+
+
+
+
+
+/* DATOS PRINCIPALES */
+
+.info-linea{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    border-bottom:1px solid #333;
+
+    padding:12px 0;
+
+}
+/* ==================================
+   SUCESS - PRODUCTO CSS
+   PARTE 2/4
+================================== */
+
+
+/* ===============================
+   ETIQUETAS PRODUCTO
+================================ */
+
+
+.etiquetas-producto{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin:25px 0;
+
+}
+
+
+
+.etiqueta{
+
+    background:#222;
+
+    border:1px solid #444;
+
+    color:var(--amarillo);
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+/* TIPOS DE ETIQUETA */
+
+.etiqueta-pais{
+
+    color:white;
+
+}
+
+
+
+.etiqueta-categoria{
+
+    color:#25d366;
+
+}
+
+
+
+.etiqueta-rareza{
+
+    color:#ffd700;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   PRECIO
+================================ */
+
+
+.precio-producto{
+
+    color:var(--amarillo);
+
+    font-size:40px;
+
+    font-weight:900;
+
+    margin:25px 0;
+
+}
+
+
+
+
+
+.precio-producto span{
+
+    font-size:20px;
+
+}
+
+
+
+
+
+/* ===============================
+   STOCK
+================================ */
+
+
+.stock-producto{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.stock-disponible{
+
+    background:#143d24;
+
+    color:#25d366;
+
+}
+
+
+
+.stock-agotado{
+
+    background:#421b1b;
+
+    color:#e63946;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   BOTONES
+================================ */
+
+
+.botones-producto{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+
+
+
+
+.btn-comprar{
+
+    flex:1;
+
+    background:var(--amarillo);
+
+    color:#111;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    font-weight:900;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.btn-comprar:hover{
+
+    background:var(--amarillo-hover);
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+.btn-favorito{
+
+    width:60px;
+
+    background:#222;
+
+    color:white;
+
+    border:1px solid #444;
+
+    border-radius:12px;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.btn-favorito:hover{
+
+    border-color:var(--amarillo);
+
+    transform:scale(1.05);
+
+}
+/* ==================================
+   SUCESS - PRODUCTO CSS
+   PARTE 3/4
+================================== */
+
+
+/* ===============================
+   DESCRIPCION
+================================ */
+
+
+.descripcion-producto{
+
+    margin-top:40px;
+
+    background:#181818;
+
+    border:1px solid #333;
+
+    border-radius:20px;
+
+    padding:30px;
+
+}
+
+
+
+.descripcion-producto h2{
+
+    color:var(--amarillo);
+
+    margin-bottom:20px;
+
+}
+
+
+
+.descripcion-producto p{
+
+    color:#ccc;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+
+
+
+
+
+/* ===============================
+   INFORMACION TECNICA
+================================ */
+
+
+.detalles-producto{
+
+    margin-top:35px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+
+
+
+.detalle-item{
+
+    background:#111;
+
+    border:1px solid #333;
+
+    border-radius:15px;
+
+    padding:20px;
+
+}
+
+
+
+.detalle-item h3{
+
+    color:var(--amarillo);
+
+    font-size:16px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.detalle-item p{
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   COLECCION
+================================ */
+
+
+.coleccion-producto{
+
+    margin-top:30px;
+
+    padding:20px;
+
+    background:#222;
+
+    border-radius:15px;
+
+    border-left:4px solid var(--amarillo);
+
+}
+
+
+
+.coleccion-producto h3{
+
+    color:var(--amarillo);
+
+    margin-bottom:10px;
+
+}
+
+
+
+.coleccion-producto p{
+
+    color:#ddd;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   PRODUCTOS RELACIONADOS
+================================ */
+
+
+.relacionados{
+
+    margin-top:70px;
+
+}
+
+
+
+.relacionados h2{
+
+    color:var(--amarillo);
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.productos-relacionados{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+
+.card-relacionado{
+
+    background:#181818;
+
+    border:1px solid #333;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+.card-relacionado:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--amarillo);
+
+}
+
+
+
+.card-relacionado img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:contain;
+
+}
+
+
+
+.card-relacionado h3{
+
+    color:white;
+
+    margin-top:15px;
+
+}
+
+
+
+.card-relacionado p{
+
+    color:var(--amarillo);
+
+    font-weight:bold;
+
+}
+/* ==================================
+   SUCESS - PRODUCTO CSS
+   PARTE 4/4
+================================== */
+
+
+/* ===============================
+   ANIMACIONES
+================================ */
+
+
+.producto-detalle{
+
+    animation:aparecerProducto .5s ease;
+
+}
+
+
+
+@keyframes aparecerProducto{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+
+
+
+/* ===============================
+   EFECTOS
+================================ */
+
+
+.producto-info-detalle h1{
+
+    transition:.3s;
+
+}
+
+
+
+.producto-info-detalle h1:hover{
+
+    color:var(--amarillo-hover);
+
+}
+
+
+
+
+
+/* ===============================
+   TABLET
+================================ */
+
+
+@media(max-width:1000px){
+
+
+
+    .producto-detalle{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+    }
+
+
+
+
+
+    .producto-imagen{
+
+        height:450px;
+
+    }
+
+
+
+
+
+    .productos-relacionados{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   CELULAR
+================================ */
+
+
+@media(max-width:600px){
+
+
+
+    .producto-container{
+
+        width:94%;
+
+        margin:30px auto;
+
+    }
+
+
+
+
+
+    .producto-detalle{
+
+        padding:20px;
+
+        border-radius:18px;
+
+    }
+
+
+
+
+
+    .producto-imagen{
+
+        height:320px;
+
+    }
+
+
+
+
+
+    .producto-info-detalle{
+
+        padding:5px;
+
+    }
+
+
+
+
+
+    .producto-info-detalle h1{
+
+        font-size:30px;
+
+    }
+
+
+
+
+
+    .producto-info-detalle p{
+
+        font-size:16px;
+
+    }
+
+
+
+
+
+    .precio-producto{
+
+        font-size:32px;
+
+    }
+
+
+
+
+
+    .botones-producto{
+
+        flex-direction:column;
+
+    }
+
+
+
+
+
+    .btn-favorito{
+
+        width:100%;
+
+        height:55px;
+
+    }
+
+
+
+
+
+    .detalles-producto{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+
+
+    .productos-relacionados{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+
+
+    .descripcion-producto{
+
+        padding:20px;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   CELULAR PEQUEÑO
+================================ */
+
+
+@media(max-width:380px){
+
+
+
+    .producto-imagen{
+
+        height:260px;
+
+    }
+
+
+
+
+
+    .producto-info-detalle h1{
+
+        font-size:25px;
+
+    }
+
+
+
+
+
+    .etiqueta{
+
+        font-size:12px;
+
+        padding:6px 10px;
+
+    }
+
+
+}

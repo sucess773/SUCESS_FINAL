@@ -1,0 +1,277 @@
+/* ==================================
+   SUCESS - CONTACTO CSS 2.0
+================================== */
+
+
+/* CONTENEDOR */
+
+.contacto-container{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:60px auto;
+
+    padding-bottom:50px;
+
+}
+
+
+
+
+
+/* TITULO */
+
+.contacto-container h1{
+
+    text-align:center;
+
+    color:var(--amarillo);
+
+    font-size:42px;
+
+    font-weight:900;
+
+    margin-bottom:45px;
+
+}
+
+
+
+
+
+/* TARJETA */
+
+.contacto-card{
+
+    background:#111;
+
+    border:1px solid #292929;
+
+    border-radius:25px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+
+
+
+
+.contacto-card h2{
+
+    color:white;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.contacto-card p{
+
+    color:#bbb;
+
+    font-size:17px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* DATOS */
+
+.contacto-datos{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin:40px 0;
+
+}
+
+
+
+
+
+.contacto-datos div{
+
+    background:#080808;
+
+    border:1px solid #292929;
+
+    border-radius:20px;
+
+    padding:30px 20px;
+
+    transition:.3s;
+
+}
+
+
+
+
+
+.contacto-datos div:hover{
+
+    border-color:var(--amarillo);
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+.contacto-datos h3{
+
+    color:var(--amarillo);
+
+    margin:15px 0 10px;
+
+    font-size:22px;
+
+}
+
+
+
+
+
+.contacto-datos p{
+
+    color:white;
+
+    font-size:17px;
+
+}
+
+
+
+
+
+
+
+/* BOTON WHATSAPP */
+
+.btn-contacto{
+
+    display:inline-block;
+
+    background:#25d366;
+
+    color:white;
+
+    padding:16px 45px;
+
+    border-radius:15px;
+
+    font-size:18px;
+
+    font-weight:900;
+
+    transition:.3s;
+
+}
+
+
+
+
+
+.btn-contacto:hover{
+
+    background:#20bd5a;
+
+    transform:translateY(-4px);
+
+}
+
+
+
+
+
+
+
+/* TABLET */
+
+@media(max-width:900px){
+
+
+.contacto-datos{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* CELULAR */
+
+@media(max-width:600px){
+
+
+.contacto-container{
+
+    width:94%;
+
+    margin:35px auto;
+
+}
+
+
+
+.contacto-container h1{
+
+    font-size:30px;
+
+}
+
+
+
+.contacto-card{
+
+    padding:25px 20px;
+
+}
+
+
+
+.contacto-card h2{
+
+    font-size:24px;
+
+}
+
+
+
+.btn-contacto{
+
+    width:100%;
+
+}
+
+
+
+}

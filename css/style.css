@@ -1,0 +1,822 @@
+/* ==================================
+   SUCESS 2.0 - STYLE CSS
+   BASE + PORTADA
+================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+
+
+
+:root{
+
+    --amarillo:#ffd400;
+
+    --amarillo-hover:#e6bd00;
+
+    --negro:#050505;
+
+    --card:#111;
+
+    --borde:#292929;
+
+    --texto:#ffffff;
+
+    --gris:#bdbdbd;
+
+}
+
+
+
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+
+
+body{
+
+    background:var(--negro);
+
+    color:white;
+
+}
+
+
+
+
+
+
+a{
+
+    text-decoration:none;
+
+    color:white;
+
+}
+
+
+
+
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+
+/* ===============================
+   HEADER PREMIUM
+================================ */
+
+
+header{
+
+    background:rgba(5,5,5,.95);
+
+    border-bottom:1px solid var(--borde);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+
+
+
+
+nav{
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+
+
+
+.logo{
+
+    color:var(--amarillo);
+
+    font-size:34px;
+
+    font-weight:900;
+
+    letter-spacing:2px;
+
+}
+
+
+
+
+
+.menu{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+
+
+
+
+.menu a{
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+
+
+.menu a:hover{
+
+    color:var(--amarillo);
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   HERO
+================================ */
+
+
+.hero{
+
+    min-height:600px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+
+    background:
+
+    linear-gradient(
+
+    rgba(0,0,0,.55),
+
+    rgba(0,0,0,.90)
+
+    ),
+
+    url("../assets/estadio.jpg");
+
+
+    background-size:cover;
+
+
+    background-position:center;
+
+}
+
+
+
+
+
+
+.hero-contenido{
+
+    width:90%;
+
+    max-width:850px;
+
+}
+
+
+
+
+
+
+.hero h1{
+
+    font-size:60px;
+
+    line-height:1.1;
+
+    font-weight:900;
+
+    color:var(--amarillo);
+
+    text-transform:uppercase;
+
+    letter-spacing:-1px;
+
+    text-shadow:0 5px 20px rgba(0,0,0,.8);
+
+}
+
+
+
+
+
+
+
+
+.hero p{
+
+    margin:25px auto;
+
+    max-width:650px;
+
+    font-size:21px;
+
+    color:#ddd;
+
+}
+
+
+
+
+
+
+
+/* BOTON */
+
+.btn{
+
+    display:inline-block;
+
+    background:var(--amarillo);
+
+    color:#111;
+
+    padding:16px 45px;
+
+    border-radius:12px;
+
+    font-weight:900;
+
+    transition:.3s;
+
+}
+
+
+
+
+
+.btn:hover{
+
+    background:var(--amarillo-hover);
+
+    transform:translateY(-4px);
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   BIENVENIDA
+================================ */
+
+
+.bienvenida{
+
+    text-align:center;
+
+    padding:70px 0;
+
+}
+
+
+
+
+
+.bienvenida h2{
+
+    color:var(--amarillo);
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.bienvenida p{
+
+    color:var(--gris);
+
+    max-width:800px;
+
+    margin:auto;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+
+/* DESTACADOS */
+
+.destacados{
+
+    margin-top:45px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+
+.destacados div{
+
+    background:var(--card);
+
+    border:1px solid var(--borde);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.3s;
+
+}
+
+
+
+
+
+.destacados div:hover{
+
+    border-color:var(--amarillo);
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+.destacados h3{
+
+    color:var(--amarillo);
+
+    margin-bottom:12px;
+
+}
+
+
+
+
+
+.destacados p{
+
+    font-size:15px;
+
+}
+header{
+
+    backdrop-filter:blur(10px);
+
+}
+/* ==================================
+   SUCESS 2.0 - CATALOGO
+================================== */
+
+
+/* TITULO CATALOGO */
+
+main.container > h2{
+
+    text-align:center;
+
+    color:var(--amarillo);
+
+    font-size:42px;
+
+    font-weight:900;
+
+    margin:60px 0 35px;
+
+}
+
+
+
+
+
+/* ===============================
+   FILTROS
+================================ */
+
+
+.filtros{
+
+    background:#111;
+
+    border:1px solid #292929;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    display:grid;
+
+    grid-template-columns:2fr repeat(4,1fr);
+
+    gap:15px;
+
+    margin-bottom:45px;
+
+}
+
+
+
+
+
+.filtros input,
+
+.filtros select{
+
+
+    background:#050505;
+
+    color:white;
+
+    border:1px solid #333;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+
+
+.filtros input:focus,
+
+.filtros select:focus{
+
+    border-color:var(--amarillo);
+
+}
+
+
+
+
+
+
+/* ===============================
+   PRODUCTOS
+================================ */
+
+
+.productos{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-bottom:60px;
+
+
+}
+
+
+
+
+
+
+
+/* TARJETA */
+
+.producto-card{
+
+
+    background:#111;
+
+    border:1px solid #292929;
+
+    border-radius:22px;
+
+    padding:20px;
+
+    transition:.3s;
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+.producto-card:hover{
+
+
+    border-color:var(--amarillo);
+
+    transform:translateY(-6px);
+
+
+}
+
+
+
+
+
+
+/* IMAGEN */
+
+.producto-card img{
+
+
+
+    width:100%;
+    height:300px;
+    object-fit:contain;
+    background:#050505;
+    border-radius:15px;
+
+
+}
+
+
+
+
+
+
+
+/* INFORMACION */
+
+.producto-info{
+
+
+    padding-top:20px;
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.producto-info h3{
+
+
+    color:white;
+
+    font-size:20px;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+.producto-info p{
+
+
+    color:#aaa;
+
+    margin:6px 0;
+
+
+}
+
+
+
+
+
+/* PRECIO */
+
+
+.precio{
+
+
+    color:var(--amarillo)!important;
+
+    font-size:25px;
+
+    font-weight:900;
+
+
+}
+
+
+
+
+
+/* BOTON CARRITO */
+
+
+.btn-carrito{
+
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:14px;
+
+    background:var(--amarillo);
+
+    color:#111;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-weight:900;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.btn-carrito:hover{
+
+
+    background:var(--amarillo-hover);
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+
+
+/* FAVORITO */
+
+
+.favorito-btn{
+
+
+    background:#050505;
+
+    border:1px solid #333;
+
+    border-radius:50%;
+
+    width:40px;
+
+    height:40px;
+
+    cursor:pointer;
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   TABLET
+================================ */
+
+
+@media(max-width:1000px){
+
+
+.productos{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.filtros{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+
+}
+
+
+
+
+
+/* ===============================
+   CELULAR
+================================ */
+
+
+@media(max-width:600px){
+
+
+
+main.container > h2{
+
+    font-size:32px;
+
+}
+
+
+
+.productos{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.filtros{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.producto-card img{
+
+    height:230px;
+
+}
+
+
+
+}

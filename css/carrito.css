@@ -1,0 +1,975 @@
+/* ==================================
+   SUCESS - CARRITO CSS
+   PARTE 1/4
+================================== */
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.carrito-container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:50px auto;
+
+}
+
+
+
+
+
+/* TITULO */
+
+.carrito-container h1{
+
+    text-align:center;
+
+    color:var(--amarillo);
+
+    font-size:42px;
+
+    font-weight:900;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+
+
+/* ESTRUCTURA */
+
+.carrito-contenido{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:35px;
+
+    align-items:start;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   LISTA PRODUCTOS
+================================ */
+
+
+.lista-carrito{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+
+
+
+
+/* ITEM CARRITO */
+
+.item-carrito{
+
+    background:#111;
+
+    border:1px solid #292929;
+
+    border-radius:20px;
+
+    padding:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    min-height:150px;
+
+}
+
+.item-carrito:hover{
+
+    border-color:var(--amarillo);
+
+}
+
+
+
+
+/* IMAGEN */
+
+.item-carrito img{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:contain;
+
+    background:#050505;
+
+    border-radius:15px;
+
+}
+
+
+
+
+
+
+/* INFORMACION */
+
+.info-carrito{
+
+    flex:1;
+
+}
+.info-carrito h3{
+
+    color:white;
+
+    font-size:22px;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.info-carrito p{
+
+    color:#bbb;
+
+    margin:7px 0;
+
+}
+
+
+
+
+
+
+
+/* PRECIO */
+
+.precio-carrito{
+
+    color:var(--amarillo);
+
+    font-size:24px;
+
+    font-weight:900;
+
+}
+/* ==================================
+   SUCESS - CARRITO CSS
+   PARTE 2/4
+================================== */
+
+
+/* ===============================
+   CANTIDAD
+================================ */
+
+
+.cantidad{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:15px;
+
+}
+
+
+
+.cantidad button{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--amarillo);
+
+    color:#111;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.cantidad button:hover{
+
+    background:var(--amarillo-hover);
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+.cantidad span{
+
+    min-width:35px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   SUBTOTAL
+================================ */
+
+
+.subtotal{
+
+    color:var(--amarillo);
+
+    font-size:24px;
+
+    font-weight:900;
+
+    min-width:100px;
+
+    text-align:right;
+
+}
+
+
+
+
+
+/* ===============================
+   ELIMINAR
+================================ */
+
+
+.eliminar{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#421b1b;
+
+    color:#ff7777;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.eliminar:hover{
+
+    background:#e63946;
+
+    color:white;
+
+    transform:scale(1.1);
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   BOTONES GENERALES CARRITO
+================================ */
+
+
+.botones-carrito{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+
+
+
+
+.btn-vaciar{
+
+    flex:1;
+
+    padding:15px;
+
+    background:#e63946;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.btn-vaciar:hover{
+
+    background:#ff5555;
+
+}
+
+
+
+
+
+
+
+.btn-seguir{
+
+    flex:1;
+
+    padding:15px;
+
+    background:#222;
+
+    color:white;
+
+    border:1px solid #444;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+.btn-seguir:hover{
+
+    border-color:var(--amarillo);
+
+    color:var(--amarillo);
+
+}
+/* ==================================
+   SUCESS - CARRITO CSS
+   PARTE 3/4
+================================== */
+
+
+
+/* ===============================
+   RESUMEN COMPRA
+================================ */
+
+
+.resumen-carrito{
+
+    background:#181818;
+
+    border:1px solid #333;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    position:sticky;
+
+    top:100px;
+
+}
+
+
+
+.resumen-carrito h2{
+
+    color:var(--amarillo);
+
+    text-align:center;
+
+    font-size:28px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+
+
+
+/* LINEAS RESUMEN */
+
+.linea-resumen{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #333;
+
+}
+
+
+
+.linea-resumen span{
+
+    color:#ccc;
+
+}
+
+
+
+.linea-resumen strong{
+
+    color:white;
+
+}
+
+
+
+
+
+
+
+/* TOTAL */
+
+.total-carrito{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:25px;
+
+    padding-top:20px;
+
+    border-top:2px solid var(--amarillo);
+
+}
+
+
+
+.total-carrito span{
+
+    color:white;
+
+    font-size:22px;
+
+}
+
+
+
+.total-carrito strong{
+
+    color:var(--amarillo);
+
+    font-size:32px;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   DATOS CLIENTE
+================================ */
+
+
+.datos-cliente{
+
+    margin-top:35px;
+
+}
+
+
+
+.datos-cliente h3{
+
+    color:var(--amarillo);
+
+    margin-bottom:20px;
+
+}
+
+
+
+.datos-cliente input,
+
+.datos-cliente textarea{
+
+    width:100%;
+
+    background:#111;
+
+    border:1px solid #444;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    margin-bottom:15px;
+
+    outline:none;
+
+}
+
+
+
+.datos-cliente input:focus,
+
+.datos-cliente textarea:focus{
+
+    border-color:var(--amarillo);
+
+}
+
+
+
+.datos-cliente textarea{
+
+    height:100px;
+
+    resize:none;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   WHATSAPP
+================================ */
+
+
+.btn-whatsapp{
+
+background:#25d366;
+
+border-radius:15px;
+
+font-size:18px;
+
+box-shadow:0 10px 25px rgba(37,211,102,.2);
+
+}
+
+
+.btn-whatsapp:hover{
+
+    transform:translateY(-3px);
+
+    background:#20bd5a;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   CARRITO VACIO
+================================ */
+
+
+.carrito-vacio{
+
+    background:#181818;
+
+    border:1px solid #333;
+
+    border-radius:25px;
+
+    padding:70px 30px;
+
+    text-align:center;
+
+}
+
+
+
+.carrito-vacio h2{
+
+    color:var(--amarillo);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.carrito-vacio p{
+
+    color:#aaa;
+
+    font-size:18px;
+
+}
+/* ==================================
+   SUCESS - CARRITO CSS
+   PARTE 4/4
+================================== */
+
+
+/* ===============================
+   ANIMACIONES
+================================ */
+
+
+.item-carrito{
+
+    animation:entradaCarrito .4s ease;
+
+}
+
+
+
+@keyframes entradaCarrito{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+
+
+
+/* ===============================
+   EFECTOS
+================================ */
+
+
+.resumen-carrito:hover{
+
+    border-color:var(--amarillo);
+
+}
+
+
+
+.item-carrito img{
+
+    transition:.3s;
+
+}
+
+
+
+.item-carrito:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   TABLET
+================================ */
+
+
+@media(max-width:1000px){
+
+
+    .carrito-contenido{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .resumen-carrito{
+
+        position:static;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   CELULAR
+================================ */
+
+
+@media(max-width:700px){
+
+
+
+    .carrito-container{
+
+        width:94%;
+
+        margin:30px auto;
+
+    }
+
+
+
+
+
+    .carrito-container h1{
+
+        font-size:32px;
+
+    }
+
+
+
+
+
+    .item-carrito{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:25px;
+
+    }
+
+
+
+
+
+    .item-carrito img{
+
+        width:160px;
+
+        height:160px;
+
+    }
+
+
+
+
+
+    .info-carrito h3{
+
+        font-size:20px;
+
+    }
+
+
+
+
+
+    .cantidad{
+
+        justify-content:center;
+
+    }
+
+
+
+
+
+    .subtotal{
+
+        text-align:center;
+
+        min-width:auto;
+
+        margin-top:15px;
+
+    }
+
+
+
+
+
+    .eliminar{
+
+        margin-top:10px;
+
+    }
+
+
+
+
+
+    .botones-carrito{
+
+        flex-direction:column;
+
+    }
+
+
+
+
+
+    .total-carrito strong{
+
+        font-size:26px;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   CELULAR PEQUEÑO
+================================ */
+
+
+@media(max-width:380px){
+
+
+
+    .resumen-carrito{
+
+        padding:20px;
+
+    }
+
+
+
+
+
+    .resumen-carrito h2{
+
+        font-size:24px;
+
+    }
+
+
+
+
+
+    .cantidad button{
+
+        width:35px;
+
+        height:35px;
+
+    }
+
+
+
+}
+.resumen-carrito{
+
+background:#111;
+
+border:1px solid #292929;
+
+box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
