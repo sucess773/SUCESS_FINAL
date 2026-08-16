@@ -58,28 +58,29 @@ function mostrarVistaCarrito(){
 
     if(carrito.length===0){
 
+lista.innerHTML = `
 
-        lista.innerHTML=`
+<div class="carrito-vacio">
 
-        <div class="carrito-vacio">
+    <div class="icono-vacio">
+        🛒
+    </div>
 
-            <h2>
-            🛒 Tu carrito está vacío
-            </h2>
+    <h2>
+        Tu carrito está vacío
+    </h2>
 
-            <p>
-            Agrega tus figuritas favoritas.
-            </p>
+    <p>
+        Agrega tus figuritas favoritas.
+    </p>
 
+    <a href="catalogo.html" class="btn-seguir">
+        Ver catálogo
+    </a>
 
-            <a href="catalogo.html" class="btn-seguir">
-            Ver catálogo
-            </a>
+</div>
 
-
-        </div>
-
-        `;
+`;
 
 
         actualizarResumen();
