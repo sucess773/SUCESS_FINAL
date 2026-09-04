@@ -1,247 +1,371 @@
-/* ==================================
-   SUCESS - NOSOTROS CSS 2.0
-================================== */
+
+/* =====================================================
+   SUCESS - PÁGINA NOSOTROS
+   DISEÑO DESKTOP
+   COLORES: NEGRO / BLANCO / CREMA
+===================================================== */
 
 
-/* CONTENEDOR */
+/* =====================================================
+   CONTENEDOR PRINCIPAL
+===================================================== */
 
 .nosotros{
-
     width:90%;
-
     max-width:1100px;
 
-    margin:60px auto;
+    margin:0 auto;
 
-    padding-bottom:60px;
-
+    padding-top:55px;
+    padding-bottom:70px;
 }
 
 
+/* =====================================================
+   TÍTULO PRINCIPAL
+===================================================== */
 
-
-
-/* TITULO */
-
-.nosotros h2{
+.nosotros > h2{
+    margin:0 0 35px;
 
     text-align:center;
 
-    color:var(--amarillo);
+    color:#FFFFFF;
 
-    font-size:45px;
+    font-size:40px;
+    font-weight:800;
 
-    font-weight:900;
-
-    margin-bottom:45px;
-
+    letter-spacing:-1px;
 }
 
 
-
-
-
-/* TARJETA PRINCIPAL */
+/* =====================================================
+   TARJETA PRINCIPAL
+===================================================== */
 
 .nosotros-card{
+    width:100%;
 
-    background:#111;
+    background:#111111;
 
-    border:1px solid #292929;
+    border:1px solid #252525;
 
-    border-radius:25px;
+    border-radius:6px;
 
-    padding:45px;
+    padding:45px 50px;
 
     text-align:center;
 
-    box-shadow:0 20px 40px rgba(0,0,0,.4);
-
+    box-shadow:
+        0 10px 35px rgba(0,0,0,.30);
 }
 
 
-
-
+/* =====================================================
+   TÍTULO DE LA TARJETA
+===================================================== */
 
 .nosotros-card h3{
+    margin:0 0 25px;
 
-    color:white;
+    color:#FFFFFF;
 
-    font-size:30px;
+    font-size:29px;
+    font-weight:800;
 
-    margin-bottom:25px;
-
+    letter-spacing:-.5px;
 }
 
 
+/* =====================================================
+   PÁRRAFOS
+===================================================== */
 
-
-
-.nosotros-card p{
-
-    color:#bbb;
-
-    font-size:17px;
-
-    line-height:1.7;
-
+.nosotros-card > p{
+    width:100%;
     max-width:850px;
 
-    margin:15px auto;
+    margin:0 auto 18px;
 
+    color:rgba(255,255,255,.72);
+
+    font-size:16px;
+
+    line-height:1.7;
 }
 
 
-
-
-
-
-
-/* VALORES */
+/* =====================================================
+   TARJETAS DE VALORES
+===================================================== */
 
 .valores{
+    width:100%;
+    max-width:1000px;
+
+    margin:45px auto 38px;
 
     display:grid;
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:25px;
-
-    margin:45px 0;
-
+    gap:24px;
 }
 
 
+/* =====================================================
+   TARJETA INDIVIDUAL
+===================================================== */
 
-
-
-.valores div{
+.valor{
+    width:100%;
+    min-height:315px;
 
     background:#080808;
 
     border:1px solid #292929;
 
-    border-radius:20px;
+    border-radius:6px;
 
-    padding:30px 20px;
+    padding:20px;
 
-    transition:.3s;
+    display:flex;
 
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        background .25s ease;
 }
 
 
+/* =====================================================
+   EFECTO HOVER
+===================================================== */
 
+.valor:hover{
+    transform:translateY(-5px);
 
+    border-color:#E8E8D5;
 
-.valores div:hover{
-
-    border-color:var(--amarillo);
-
-    transform:translateY(-6px);
-
+    background:#0C0C0C;
 }
 
 
+/* =====================================================
+   IMÁGENES
+===================================================== */
 
+.valor img{
+    display:block;
 
+    width:100%;
 
-.valores h4{
+    height:165px;
 
-    color:var(--amarillo);
+    object-fit:contain;
 
-    font-size:22px;
-
-    margin-bottom:12px;
-
+    margin:0 0 18px;
 }
 
 
+/* =====================================================
+   TÍTULO DE CADA VALOR
+===================================================== */
 
+.valor h4{
+    margin:0 0 10px;
 
+    color:#FFFFFF;
 
-.valores p{
+    font-size:20px;
 
-    font-size:15px;
+    font-weight:800;
 
+    line-height:1.2;
 }
 
 
+/* =====================================================
+   TEXTO DE CADA VALOR
+===================================================== */
 
+.valor p{
+    width:100%;
+    max-width:240px;
 
+    margin:0;
 
+    color:rgba(255,255,255,.68);
 
+    font-size:14px;
 
-/* BOTON */
-
-.nosotros .btn{
-
-    display:inline-block;
-
-    margin-top:20px;
-
+    line-height:1.5;
 }
 
 
+/* =====================================================
+   BOTÓN
+===================================================== */
 
+.nosotros-card .btn{
+    display:inline-flex;
 
+    align-items:center;
 
+    justify-content:center;
 
+    min-width:170px;
 
-/* TABLET */
+    padding:14px 30px;
 
-@media(max-width:900px){
+    background:#FFFFFF;
 
+    color:#000000;
 
-.valores{
+    border:1px solid #FFFFFF;
 
-    grid-template-columns:1fr;
+    border-radius:3px;
 
+    font-size:13px;
+
+    font-weight:800;
+
+    text-transform:uppercase;
+
+    letter-spacing:.3px;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        transform .25s ease;
 }
 
 
+/* =====================================================
+   HOVER BOTÓN
+===================================================== */
+
+.nosotros-card .btn:hover{
+    background:#E8E8D5;
+
+    border-color:#E8E8D5;
+
+    color:#000000;
+
+    transform:translateY(-2px);
 }
 
 
+/* =====================================================
+   FOOTER
+===================================================== */
 
-
-
-
-
-/* CELULAR */
-
-@media(max-width:600px){
-
-
-.nosotros{
-
-    width:94%;
-
+.nosotros + footer{
+    display:none;
 }
 
 
-
-.nosotros h2{
-
-    font-size:32px;
-
-}
-
-
-
-.nosotros-card{
-
-    padding:25px 20px;
-
-}
-
-
+/* =====================================================
+   EVITAR ELEMENTOS ANTIGUOS
+===================================================== */
 
 .nosotros-card h3{
+    text-shadow:none;
+}
 
-    font-size:24px;
+.valor h4{
+    text-shadow:none;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:900px){
+
+    .nosotros{
+        width:92%;
+
+        padding-top:45px;
+    }
+
+    .nosotros-card{
+        padding:35px 30px;
+    }
+
+    .valores{
+        gap:18px;
+    }
+
+    .valor{
+        min-height:300px;
+    }
+
+    .valor img{
+        height:145px;
+    }
 
 }
 
 
+/* =====================================================
+   CELULAR
+   ESTA PARTE ES SOLO UNA BASE.
+   DESPUÉS LA PODEMOS DISEÑAR A PARTE.
+===================================================== */
+
+@media (max-width:600px){
+
+    .nosotros{
+        width:92%;
+
+        padding-top:35px;
+        padding-bottom:50px;
+    }
+
+    .nosotros > h2{
+        font-size:32px;
+
+        margin-bottom:25px;
+    }
+
+    .nosotros-card{
+        padding:30px 18px;
+    }
+
+    .nosotros-card h3{
+        font-size:24px;
+    }
+
+    .nosotros-card > p{
+        font-size:15px;
+    }
+
+    .valores{
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+        margin-top:35px;
+    }
+
+    .valor{
+        min-height:290px;
+    }
+
+    .valor img{
+        height:160px;
+    }
 
 }

@@ -200,3 +200,69 @@
 
 
 }
+/* =================================
+   FAVORITOS - ESTILO SUCESS
+================================= */
+
+.favoritos-page{
+    padding-top:50px;
+    padding-bottom:70px;
+}
+
+.favoritos-page > h2{
+    text-align:center;
+
+    color:#FFFFFF;
+
+    font-size:38px;
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+    margin-bottom:40px;
+}
+
+
+/* CONTENEDOR DE FAVORITOS */
+
+#lista-favoritos{
+    width:100%;
+
+    min-height:350px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+}
+
+
+/* MENSAJE CUANDO NO HAY FAVORITOS */
+
+#lista-favoritos:empty::before{
+    content:"No tienes favoritos";
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-height:250px;
+
+    grid-column:1 / -1;
+
+    background:#111111;
+
+    border:1px solid #252525;
+
+    border-radius:4px;
+
+    color:#FFFFFF;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    text-align:center;
+}

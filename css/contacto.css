@@ -1,277 +1,289 @@
-/* ==================================
-   SUCESS - CONTACTO CSS 2.0
-================================== */
-
-
-/* CONTENEDOR */
+/* =====================================================
+   SUCESS - CONTACTO
+===================================================== */
 
 .contacto-container{
-
     width:90%;
+    max-width:1050px;
 
-    max-width:1100px;
+    margin:0 auto;
 
-    margin:60px auto;
-
-    padding-bottom:50px;
-
+    padding:55px 0 80px;
 }
 
 
+/* =====================================================
+   TÍTULO
+===================================================== */
 
-
-
-/* TITULO */
-
-.contacto-container h1{
+.contacto-container > h1{
+    margin:0 0 40px;
 
     text-align:center;
 
-    color:var(--amarillo);
+    color:#FFFFFF;
 
     font-size:42px;
+    font-weight:800;
 
-    font-weight:900;
-
-    margin-bottom:45px;
-
+    letter-spacing:-1px;
 }
 
 
-
-
-
-/* TARJETA */
+/* =====================================================
+   TARJETA PRINCIPAL
+===================================================== */
 
 .contacto-card{
 
-    background:#111;
+    background:#111111;
 
-    border:1px solid #292929;
+    border:1px solid #252525;
 
-    border-radius:25px;
+    border-radius:6px;
 
-    padding:45px;
+    padding:45px 40px;
 
     text-align:center;
-
-    box-shadow:0 20px 40px rgba(0,0,0,.4);
-
 }
 
 
-
-
+/* =====================================================
+   SUBTÍTULO
+===================================================== */
 
 .contacto-card h2{
 
-    color:white;
+    margin:0 0 18px;
 
-    font-size:30px;
+    color:#FFFFFF;
 
-    margin-bottom:20px;
+    font-size:28px;
 
+    font-weight:800;
 }
 
 
+.contacto-descripcion{
 
+    max-width:700px;
 
+    margin:0 auto;
 
-.contacto-card p{
+    color:rgba(255,255,255,.65);
 
-    color:#bbb;
+    font-size:16px;
 
-    font-size:17px;
-
-    line-height:1.6;
-
+    line-height:1.7;
 }
 
 
-
-
-
-/* DATOS */
+/* =====================================================
+   DATOS DE CONTACTO
+===================================================== */
 
 .contacto-datos{
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:40px auto;
 
     display:grid;
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:25px;
-
-    margin:40px 0;
-
+    gap:20px;
 }
 
 
+/* =====================================================
+   TARJETAS
+===================================================== */
 
+.contacto-item{
 
+    min-width:0;
 
-.contacto-datos div{
+    background:#000000;
 
-    background:#080808;
+    border:1px solid #252525;
 
-    border:1px solid #292929;
+    border-radius:4px;
 
-    border-radius:20px;
+    padding:28px 18px;
 
-    padding:30px 20px;
-
-    transition:.3s;
-
+    transition:.2s ease;
 }
 
 
+.contacto-item:hover{
 
+    border-color:#E8E8D5;
 
-
-.contacto-datos div:hover{
-
-    border-color:var(--amarillo);
-
-    transform:translateY(-5px);
-
+    transform:translateY(-3px);
 }
 
 
+/* =====================================================
+   ICONOS
+===================================================== */
 
+.contacto-imagen{
+    width:85px;
+    height:85px;
 
+    object-fit:contain;
 
-.contacto-datos h3{
+    display:block;
 
-    color:var(--amarillo);
+    margin:0 auto 20px;
+}
 
-    margin:15px 0 10px;
+/* =====================================================
+   TEXTOS
+===================================================== */
 
-    font-size:22px;
+.contacto-item h3{
 
+    margin:0 0 10px;
+
+    color:#FFFFFF;
+
+    font-size:20px;
+
+    font-weight:800;
 }
 
 
+.contacto-item p{
 
+    margin:0;
 
+    color:rgba(255,255,255,.65);
 
-.contacto-datos p{
-
-    color:white;
-
-    font-size:17px;
-
+    font-size:15px;
 }
 
 
-
-
-
-
-
-/* BOTON WHATSAPP */
+/* =====================================================
+   BOTÓN WHATSAPP
+===================================================== */
 
 .btn-contacto{
 
-    display:inline-block;
+    display:inline-flex;
 
-    background:#25d366;
+    align-items:center;
+    justify-content:center;
 
-    color:white;
+    min-width:260px;
 
-    padding:16px 45px;
+    padding:15px 28px;
 
-    border-radius:15px;
+    background:#25D366;
 
-    font-size:18px;
+    color:#000000;
 
-    font-weight:900;
+    border:1px solid #25D366;
 
-    transition:.3s;
+    border-radius:3px;
 
+    font-size:13px;
+
+    font-weight:800;
+
+    text-transform:uppercase;
+
+    transition:.2s ease;
 }
-
-
-
 
 
 .btn-contacto:hover{
 
-    background:#20bd5a;
+    background:#FFFFFF;
 
-    transform:translateY(-4px);
+    border-color:#FFFFFF;
+
+    transform:translateY(-2px);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+    display:none;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:900px){
+
+    .contacto-container{
+        width:92%;
+    }
+
+    .contacto-datos{
+        grid-template-columns:1fr;
+        max-width:500px;
+    }
 
 }
 
 
+/* =====================================================
+   CELULAR
+===================================================== */
 
+@media (max-width:600px){
 
+    .contacto-container{
 
+        width:92%;
 
+        padding:35px 0 50px;
+    }
 
-/* TABLET */
+    .contacto-container > h1{
 
-@media(max-width:900px){
+        font-size:30px;
 
+        margin-bottom:28px;
+    }
 
-.contacto-datos{
+    .contacto-card{
 
-    grid-template-columns:1fr;
+        padding:30px 20px;
+    }
 
-}
+    .contacto-card h2{
 
+        font-size:23px;
+    }
 
-}
+    .contacto-descripcion{
 
+        font-size:14px;
+    }
 
+    .contacto-datos{
 
+        margin:30px auto;
 
+        gap:14px;
+    }
 
+    .btn-contacto{
 
+        width:100%;
 
-/* CELULAR */
-
-@media(max-width:600px){
-
-
-.contacto-container{
-
-    width:94%;
-
-    margin:35px auto;
-
-}
-
-
-
-.contacto-container h1{
-
-    font-size:30px;
-
-}
-
-
-
-.contacto-card{
-
-    padding:25px 20px;
-
-}
-
-
-
-.contacto-card h2{
-
-    font-size:24px;
-
-}
-
-
-
-.btn-contacto{
-
-    width:100%;
-
-}
-
-
+        min-width:0;
+    }
 
 }
